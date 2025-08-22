@@ -1,0 +1,22 @@
+# ==========================================
+# Sentinal User Configuration
+# ==========================================
+# This file overrides default values in modules/config.sh
+
+# --- Battery thresholds ---
+LOW_THRESHOLD=20        # % at which low battery warning triggers
+FULL_THRESHOLD=90       # % at which full charge warning triggers
+
+# --- Sounds ---
+LOW_AUDIO="${XDG_DATA_HOME:-$HOME/.local/share}/sentinal/sounds/low.wav"
+FULL_AUDIO="${XDG_DATA_HOME:-$HOME/.local/share}/sentinal/sounds/full.wav"
+
+# --- Screen locker ---
+LOCKER="hyprlock"       # or swaylock, i3lock, xsecurelock...
+
+# --- Audio player ---
+AUDIO_PLAYER="paplay"   # stick with .wav for portability
+
+# --- Delay between repeated alerts ---
+AUDIO_DELAY=15
+

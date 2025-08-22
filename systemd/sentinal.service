@@ -1,0 +1,13 @@
+[Unit]
+Description=Sentinal - Battery Charge Monitor
+After=graphical.target
+
+[Service]
+ExecStart=%h/.local/bin/sentinal.sh
+Restart=on-failure
+Environment=DISPLAY=:0
+Environment=XDG_RUNTIME_DIR=%t
+
+[Install]
+WantedBy=default.target
+
